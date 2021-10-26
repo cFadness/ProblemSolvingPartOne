@@ -46,8 +46,21 @@ function titleCase(string){
 
 
 
-//1. write function with a string parameter
-//2. add the number of identical, consecutive characters for each new character
-//3. put character after the number of those consecutive characters
-//4. return the new string
-
+function stringCompressor(string){
+    let charNumber=0
+    let array=[]
+    let newString=""
+    for(let i=0; i<string.length; i++){
+        if(string[i]===string[i+1]){
+            charNumber += 1
+        }
+        else{
+            array.push(1 + charNumber + string[i])
+            charNumber=0
+        }      
+    }
+    for(let i=0; i<array.length; i++){
+        newString += array[i]
+    }
+    return newString
+}
