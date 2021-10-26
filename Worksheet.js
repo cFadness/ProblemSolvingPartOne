@@ -28,3 +28,8 @@ function reverseString(string){
 
 
 
+
+// 1. write function that capitalizes index 0 in a string
+// 2. Capitalize every character in a string that follows a space
+//    if index number is a space, capitalize index number +1
+// 3. return new string
