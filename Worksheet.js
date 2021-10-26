@@ -14,3 +14,11 @@ for(let i=0; i<=100; i++){
         console.log(i)
     }
 }
+
+
+
+// 1. Input string
+
+// 2. Take last index of string, and place it at index 0
+// 3. Do this for the entire length of the string
+// 4. Return the new string
