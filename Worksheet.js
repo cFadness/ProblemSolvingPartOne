@@ -29,7 +29,20 @@ function reverseString(string){
 
 
 
-// 1. write function that capitalizes index 0 in a string
-// 2. Capitalize every character in a string that follows a space
-//    if index number is a space, capitalize index number +1
-// 3. return new string
+function titleCase(string){
+    let newString=""
+    newString += string[0].toUpperCase()
+    for(let i=1; i<string.length; i++){
+        if(string[i-1]===" "){
+            newString += string[i].toUpperCase()
+        }
+        else{
+            newString += string[i]
+        }
+    }
+    return newString
+}
+
+
+
+
