@@ -17,8 +17,14 @@ for(let i=0; i<=100; i++){
 
 
 
-// 1. Input string
 
-// 2. Take last index of string, and place it at index 0
-// 3. Do this for the entire length of the string
-// 4. Return the new string
+function reverseString(string){
+    let newString=""
+    for(let i=string.length-1; i>=0; i--){
+        newString += string[i]
+    }
+    return newString
+}
+
+
+
