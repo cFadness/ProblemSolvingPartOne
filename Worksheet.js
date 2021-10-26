@@ -46,3 +46,8 @@ function titleCase(string){
 
 
 
+//1. write function with a string parameter
+//2. add the number of identical, consecutive characters for each new character
+//3. put character after the number of those consecutive characters
+//4. return the new string
+
