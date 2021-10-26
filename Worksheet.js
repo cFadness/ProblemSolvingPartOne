@@ -64,3 +64,20 @@ function stringCompressor(string){
     }
     return newString
 }
+
+
+
+
+function palindromeChecker(string){
+    let stringInReverse = reverseString(string)
+    if(string===stringInReverse){
+        alert("This is a palindrome")
+    }
+    else{
+        alert("This is not a palindrome")
+    }
+}
+function displayPalindromeChecker(){
+    let userInput=prompt("Enter word, phrase, or sequence to see if it is a palindrome")
+    palindromeChecker(userInput)
+}
